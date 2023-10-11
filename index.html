@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 在title模块的头部放置图标 关键知识点：rel="icon" -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>仿京东商城</title>
+    <!--引入全局样式 全局样式写在所有样式的最前面-->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- 引入图表库 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <!--引入自己的样式-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 头部开始 -->·
+    <div class="header">
+      <div class="wrap header-box">
+        <!-- 搜索框部分的京东图标 -->
+        <div class="logo">
+          <!-- 点击logo可以跳转至图片 需要对a元素设置为块元素，且设置宽高
+                <a href="./images/logo_next.gif"></a> -->
+        </div>
+        <div class="search">
+          <!-- 以下div为吸顶做准备 -->
+          <div class="search-m">
+            <!-- 吸顶用的小logo -->
+            <div class="search_logo"></div>
+            <!-- 搜索框 -->
+            <div class="form">
+              <input type="text" class="keyword" placeholder="苹果手机" />
+              <button id="search">
+                <!-- i标签本意是斜体，但习惯上用i表示图标，一方面形似icon，另一方面简短方便 -->
+                <i class="fa fa-search"></i>
+              </button>
+              <!-- 相关商品列表 -->
+              <ul class="search-helper"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <div class="banner">
+      <div class="wrap banner-box">
+        <!-- 左侧信息栏 -->
+        <div class="banner-left">
+          <ul class="cate-menu">
+            <li>
+              <a href="javascript:;">家用电器</a>
+            </li>
+            <li>
+              <a href="javascript:;">手机</a>
+              <span>/</span>
+              <a href="javascript:;">运营商</a>
+              <span>/</span>
+              <a href="javascript:;">数码</a>
+            </li>
+            <li>
+              <a href="javascript:;">电脑</a>
+              <span>/</span>
+              <a href="javascript:;">办公</a>
+            </li>
+            <li>
+              <a href="javascript:;">家居</a>
+              <span>/</span>
+              <a href="javascript:;">家具</a>
+              <span>/</span>
+              <a href="javascript:;">家装</a>
+              <span>/</span>
+              <a href="javascript:;">厨具</a>
+            </li>
+            <li>
+              <a href="javascript:;">男装</a>
+              <span>/</span>
+              <a href="javascript:;">女装</a>
+              <span>/</span>
+              <a href="javascript:;">童装</a>
+              <span>/</span>
+              <a href="javascript:;">内衣</a>
+            </li>
+            <li>
+              <a href="javascript:;">美装</a>
+              <span>/</span>
+              <a href="javascript:;">个护清洁</a>
+              <span>/</span>
+              <a href="javascript:;">宠物</a>
+            </li>
+            <li>
+              <a href="javascript:;">女鞋</a>
+              <span>/</span>
+              <a href="javascript:;">箱包</a>
+              <span>/</span>
+              <a href="javascript:;">钟表</a>
+              <span>/</span>
+              <a href="javascript:;">珠宝</a>
+            </li>
+            <li>
+              <a href="javascript:;">男鞋</a>
+              <span>/</span>
+              <a href="javascript:;">运动</a>
+              <span>/</span>
+              <a href="javascript:;">户外</a>
+            </li>
+            <li>
+              <a href="javascript:;">房产</a>
+              <span>/</span>
+              <a href="javascript:;">汽车</a>
+              <span>/</span>
+              <a href="javascript:;">汽车用品</a>
+            </li>
+            <li>
+              <a href="javascript:;">母婴</a>
+              <span>/</span>
+              <a href="javascript:;">玩具乐器</a>
+            </li>
+            <li>
+              <a href="javascript:;">食品</a>
+              <span>/</span>
+              <a href="javascript:;">酒类</a>
+              <span>/</span>
+              <a href="javascript:;">生鲜</a>
+              <span>/</span>
+              <a href="javascript:;">特产</a>
+            </li>
+            <li>
+              <a href="javascript:;">艺术</a>
+              <span>/</span>
+              <a href="javascript:;">礼品鲜花</a>
+              <span>/</span>
+              <a href="javascript:;">农资绿植</a>
+            </li>
+            <li>
+              <a href="javascript:;">医药保健</a>
+              <span>/</span>
+              <a href="javascript:;">计生情趣</a>
+            </li>
+            <li>
+              <a href="javascript:;">图书</a>
+              <span>/</span>
+              <a href="javascript:;">文娱</a>
+              <span>/</span>
+              <a href="javascript:;">教育</a>
+              <span>/</span>
+              <a href="javascript:;">电子书</a>
+            </li>
+            <li>
+              <a href="javascript:;">机票</a>
+              <span>/</span>
+              <a href="javascript:;">酒店</a>
+              <span>/</span>
+              <a href="javascript:;">旅游</a>
+              <span>/</span>
+              <a href="javascript:;">生活</a>
+            </li>
+            <li>
+              <a href="javascript:;">众筹</a>
+              <span>/</span>
+              <a href="javascript:;">白条</a>
+              <span>/</span>
+              <a href="javascript:;">保险</a>
+              <span>/</span>
+              <a href="javascript:;">企业金融</a>
+            </li>
+            <li>
+              <a href="javascript:;">安装</a>
+              <span>/</span>
+              <a href="javascript:;">维修</a>
+              <span>/</span>
+              <a href="javascript:;">清洗</a>
+              <span>/</span>
+              <a href="javascript:;">二手</a>
+            </li>
+            <li>
+              <a href="javascript:;">工业品</a>
+            </li>
+          </ul>
+        </div>
+        <div class="banner-slide">
+          <!-- 轮播图开始 -->
+          <div class="slide">
+            <a href="javascript:;"
+              ><img src="./images/img-slide/02.jpg" alt="" class="img"
+            /></a>
+            <button class="prev"><</button>
+            <button class="next">></button>
+            <!-- 显示图片轮播进度的圆点图 -->
+            <ul class="banner-btn">
+              <!-- 小技巧: ul>li*8 简易生成8个<li> -->
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="slide-right">
+              <div class="slide-right-one">
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/01.png.webp" alt=""
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/02.jpg.webp" alt=""
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/03.png.webp" alt=""
+                /></a>
+              </div>
+              <div class="slide-right-two">
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/04.png.webp" alt=""
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/05.png.webp" alt=""
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./images/slide-right/06.png.webp" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="content">
+      <div class="wrap">
+        <!-- 秒杀 -->
+        <!-- item用于方便js获取网页对象 -->
+        <div class="seckill item">
+          <a href="javascript:;"
+            ><img src="./images/seckill-img/06.png" alt=""
+          /></a>
+          <a href="javascript:;"
+            ><img class="sec-de-img" src="./images/seckill-img/01.png" alt=""
+          /></a>
+          <a href="javascript:;"
+            ><img class="sec-de-img" src="./images/seckill-img/02.png" alt=""
+          /></a>
+          <a href="javascript:;"
+            ><img class="sec-de-img" src="./images/seckill-img/03.png" alt=""
+          /></a>
+          <a href="javascript:;"
+            ><img class="sec-de-img" src="./images/seckill-img/04.png" alt=""
+          /></a>
+        </div>
+        <!-- 优选 -->
+        <div class="J_spec item">
+          <div class="J_spec-item day-spec">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/01.png" alt=""
+            /></a>
+          </div>
+          <div class="J_spec-item rand-buy">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/02.png" alt=""
+            /></a>
+          </div>
+          <div class="J_spec-item new-goods">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/03.png" alt=""
+            /></a>
+          </div>
+          <div class="J_spec-item joy-find">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/04.png" alt=""
+            /></a>
+          </div>
+          <div class="J_spec-item stroll-store">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/05.png" alt=""
+            /></a>
+          </div>
+          <div class="J_spec-item ticket-collection">
+            <a href="javascript:;"
+              ><img src="./images/spec-img/06.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 频道广场 -->
+        <!-- 频道广场标题 -->
+        <div class="floorhd">
+          <h3 class="floorhd-tit">频道广场</h3>
+        </div>
+        <!-- 频道广场详细页面 -->
+        <div class="J_app item">
+          <div class="app-item app_1">
+            <a href="javascript:;"
+              ><img src="./images/app-img/01.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_2">
+            <a href="javascript:;"
+              ><img src="./images/app-img/02.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_3">
+            <a href="javascript:;"
+              ><img src="./images/app-img/03.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_4">
+            <a href="javascript:;"
+              ><img src="./images/app-img/04.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_5">
+            <a href="javascript:;"
+              ><img src="./images/app-img/05.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_6">
+            <a href="javascript:;"
+              ><img src="./images/app-img/06.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_7">
+            <a href="javascript:;"
+              ><img src="./images/app-img/07.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_8">
+            <a href="javascript:;"
+              ><img src="./images/app-img/08.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_9">
+            <a href="javascript:;"
+              ><img src="./images/app-img/09.png" alt=""
+            /></a>
+          </div>
+          <div class="app-item app_10">
+            <a href="javascript:;"
+              ><img src="./images/app-img/10.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- 为你推荐 -->
+        <div class="J_more item">
+          <div class="floorhd">
+            <h3 class="floorhd-tit">为你推荐</h3>
+          </div>
+          <ul class="feed-tab">
+            <li>
+              <span>
+                <a>精选</a>
+                <br />
+                <a>猜你喜欢</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a>智能先锋</a>
+                <br />
+                <a>大电器城</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a>居家优品</a>
+                <br />
+                <a>品质生活</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a>精选</a>
+                <br />
+                <a>百货生鲜</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a>时尚达人</a>
+                <br />
+                <a>美妆穿搭</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a>进口好物</a>
+                <br />
+                <a>京东国际</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 楼层 -->
+      <div class="elevator">
+        <a href="javascript:;">京东<br />秒杀</a>
+        <a href="javascript:;">特色<br />优选</a>
+        <a href="javascript:;">频道<br />广场</a>
+        <a href="javascript:;">为你<br />推荐</a>
+      </div>
+    </div>
+
+    <!-- 在html页面中，js文件的导入最好放在<body>的最后 -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

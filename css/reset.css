@@ -1,0 +1,112 @@
+body {
+    font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
+    color: #666;
+    background: #fff
+}
+
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+
+a:hover {
+    color: #C81623
+}
+
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+    margin: 0;
+    padding: 0
+}
+
+
+
+
+ol,
+ul {
+    list-style: none
+}
+
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+
+em,
+i,
+u {
+    font-style: normal
+}
+
+
+.fl {
+    float: left
+}
+
+
+.fr {
+    float: right
+}
+
+
+.al {
+    text-align: left
+}
+
+
+.ac {
+    text-align: center
+}
+
+
+.ar {
+    text-align: right
+}
+
+
+.hide {
+    display: none
+}
